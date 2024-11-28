@@ -106,7 +106,7 @@ namespace BabuliHospital
         }
         static void Task1()
         {
-            Console.WriteLine("Задание 1");
+            Console.WriteLine("\n\nЗадание 1");
             List<string> imagesList = new List<string>();
 
             for (int i = 1; i <= 32; i++)
@@ -150,6 +150,7 @@ namespace BabuliHospital
 
         static void Task2()
         {
+            Console.WriteLine("\n\n Задание 2");
             Dictionary<string, Student> students = new Dictionary<string, Student>(StringComparer.OrdinalIgnoreCase);
             const string filePath = "students.txt";
 
@@ -315,6 +316,7 @@ namespace BabuliHospital
 
         static void Task3()
         {
+            Console.WriteLine("\n Задание 3");
             Queue<Babulia> babulias = new Queue<Babulia>();
             List<Hospital> hospitals = new List<Hospital>
             {
@@ -361,7 +363,7 @@ namespace BabuliHospital
                 }
             }
 
-            // Обработка бабуль
+
             while (babulias.Count > 0)
             {
                 Babulia currentBabulia = babulias.Dequeue();
@@ -374,7 +376,7 @@ namespace BabuliHospital
                         hospital.Patients.Add(currentBabulia);
                         admitted = true;
                         Console.WriteLine($"Бабуля {currentBabulia.Name} была принята в {hospital.Name}.");
-                        break; // Бабуля может быть принята только в одну больницу
+                        break; 
                     }
                 }
 
@@ -391,7 +393,7 @@ namespace BabuliHospital
                 }
             }
 
-            Console.WriteLine("Все бабули обработаны.");
+          
         }
     }
 }

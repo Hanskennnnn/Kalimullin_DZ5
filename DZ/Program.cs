@@ -57,7 +57,7 @@ namespace DZ
         }
         static void Task6_3()
         {
-            Console.WriteLine("Упражнение 6.3");
+            Console.WriteLine("\n\nУпражнение 6.3");
             Random rand = new Random();
             float[,] temperatures = new float[12, 30];
 
@@ -101,7 +101,7 @@ namespace DZ
         }
         static void Task6_2()
         {
-            Console.WriteLine("Задание 6.2");
+            Console.WriteLine("\n\nЗадание 6.2");
 
             double[,] matrix1 = { { 1, 2, 3 }, { 4, 5, 6 } };
             double[,] matrix2 = { { 7, 8 }, { 9, 10 }, { 11, 12 } };
@@ -208,7 +208,7 @@ namespace DZ
 
         public static void Task6_5()
         {
-            Console.WriteLine("Задание 6.2 Лаба");
+            Console.WriteLine("\n\nЗадание 6.2 Лаба");
             // Пример инициализации двух матриц
             LinkedList<LinkedList<int>> matrixA = new LinkedList<LinkedList<int>>();
             matrixA.AddLast(new LinkedList<int>(new[] { 1, 2, 3 }));
